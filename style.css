@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #440F0F;
+  color: #FFFFFF;
+
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 48px;
+
+  position: fixed;
+  width: 100%;
+  background-color: #440F0F;
+}
+
+button {
+  padding: 16px 24px;
+  border-radius: 8px;
+  border: 2px solid #7F1D1D;
+  background-color: transparent;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 125%;
+}
+
+button:hover {
+  scale: 1.01;
+
+  box-shadow: 1px 1px 2px #7F1D1D, 0 0 1em #7F1D1D, 0 0 0.2em #7F1D1D;
+  filter: brightness(blur);
+}
+
+#form-habits {
+  display: flex;
+
+  padding: 182px 48px 48px;
+  width: fit-content;
+}
+
+.habits {
+  margin-top: 60px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 24px;
+}
+
+.habit {
+  width: 64px;
+  height: 64px;
+
+  font-size: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.days {
+  display: flex;
+  gap: 48px;
+  margin-left: 32px;
+}
+
+.day {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.day div {
+  margin-bottom: 8px;
+
+  font-family: Roboto Mono;
+  font-size: 20px;
+  line-height: 125%;
+
+  color: #a1a1aa;
+
+  text-align: center;
+}
+
+input {
+  appearance: none;
+  -webkit-appearance: none;
+
+  width: 64px;
+  height: 64px;
+
+  border: 2px solid #440F0F;
+  border-radius: 8px;
+
+  background: #4B1717;
+}
+
+input:checked {
+  background: #7F1D1D;
+  border: 2px solid #5E1C1C;
+}
+
+@media (max-width: 570px) {
+  button div {
+    display: none;
+  }
+}
